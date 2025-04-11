@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "33a8d8f5-3553-4399-888a-b288c50043f3",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "5844dd10-79d0-4df3-a96a-6f89bbecfafa",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Authentication",
@@ -273,6 +273,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -356,7 +357,6 @@
               ]
             },
             "id": "a2b5e82a-f0d8-4d8b-81ab-5c7e26053f7a",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "View \nposts",
@@ -374,7 +374,7 @@
           {
             "position": {
               "x": 453,
-              "y": 174.0000000000001
+              "y": 179.00000000000026
             },
             "size": {
               "width": 80,
@@ -392,6 +392,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -475,7 +476,6 @@
               ]
             },
             "id": "cc4a6a53-5fcc-450f-8c0f-834bbaed090b",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "View \ncode",
@@ -511,6 +511,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -594,7 +595,6 @@
               ]
             },
             "id": "8da7ef15-b5d5-43de-914f-2948b2994e1c",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Publish \npost",
@@ -611,7 +611,7 @@
           },
           {
             "position": {
-              "x": 387.5,
+              "x": 373,
               "y": 410
             },
             "size": {
@@ -630,6 +630,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -713,7 +714,6 @@
               ]
             },
             "id": "4438cc6f-5905-4b81-971d-98a034dbb727",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Edit code",
@@ -749,6 +749,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -832,7 +833,6 @@
               ]
             },
             "id": "971e018e-72a2-4030-b201-a5c6f7275011",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Run code",
@@ -868,6 +868,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -951,7 +952,6 @@
               ]
             },
             "id": "baa992bd-3793-4d88-96f8-83e0b290565b",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "Edit user \nreputation",
@@ -987,6 +987,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1070,7 +1071,6 @@
               ]
             },
             "id": "bed82965-658c-452d-a304-990d79938e30",
-            "zIndex": 10,
             "data": {
               "type": "tm.Actor",
               "name": "Moderator",
@@ -1404,6 +1404,139 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "08e2336b-cd4f-4299-8477-9a2c9abe1a18",
+            "source": {
+              "cell": "cc4a6a53-5fcc-450f-8c0f-834bbaed090b",
+              "port": "ee902994-b3b0-4216-8bc2-d67bba9462db"
+            },
+            "target": {
+              "cell": "4438cc6f-5905-4b81-971d-98a034dbb727",
+              "port": "320f5700-a982-43d9-acce-ba493eaaadc5"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "b6eb5c03-8c8b-4393-b774-42bc168eae64",
+            "source": {
+              "cell": "cc4a6a53-5fcc-450f-8c0f-834bbaed090b",
+              "port": "ee902994-b3b0-4216-8bc2-d67bba9462db"
+            },
+            "target": {
+              "cell": "971e018e-72a2-4030-b201-a5c6f7275011",
+              "port": "320f5700-a982-43d9-acce-ba493eaaadc5"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "5f1a564c-3a77-4300-b866-4b0484a6dcd7",
+            "source": {
+              "cell": "cc4a6a53-5fcc-450f-8c0f-834bbaed090b",
+              "port": "ee902994-b3b0-4216-8bc2-d67bba9462db"
+            },
+            "target": {
+              "cell": "e126b5f6-4c68-40ef-80fb-83c8856acad3",
+              "port": "d0d83dce-5ea0-4b91-81c6-c10ba912b6be"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 809,
               "y": 169
@@ -1424,6 +1557,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1507,7 +1641,6 @@
               ]
             },
             "id": "6b05f5db-11dd-4355-b432-13e7cabe7706",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Delete \npost",
@@ -1543,6 +1676,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1626,7 +1760,6 @@
               ]
             },
             "id": "3eeb1f81-85d7-4c12-98f3-250597bbf1d0",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Generate \ncode link",
@@ -1665,6 +1798,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1748,7 +1882,6 @@
               ]
             },
             "id": "ccd49fa4-b6b3-4655-aa9a-6c515bb9582c",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "User Database",
@@ -1788,6 +1921,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1871,7 +2005,6 @@
               ]
             },
             "id": "e126b5f6-4c68-40ef-80fb-83c8856acad3",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Code Database",
@@ -1911,6 +2044,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1994,7 +2128,6 @@
               ]
             },
             "id": "c2f0507d-7df2-49e4-a292-6f8d6c82be28",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "Post Database",
