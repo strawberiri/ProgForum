@@ -325,10 +325,36 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "7a1237d4-61c3-431d-8384-7b14386355b8",
+                  "title": "Password brute force",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-1391, CWE-521, CWE-798",
+                  "mitigation": "Strong password requirements",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "76ef1d79-7bbc-4d69-8701-bdd4ad411cf6",
+                  "title": "Cookie stealing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-565, CWE-784, CWE-1004",
+                  "mitigation": "Avoid using cookie data for a security-related decision. Leverage the HttpOnly flag when setting a sensitive cookie in a response.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -698,7 +724,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "No validation of user input",
+                  "description": "No validation of user input, CWE-89, CWE-94, CWE-116",
                   "mitigation": "Validate all Input & Handle Exceptions",
                   "modelType": "STRIDE",
                   "new": false,
@@ -717,14 +743,40 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "1c3331d1-8531-4601-ae49-82f9279f2554",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "3ab0d04b-051f-454e-9189-2dc0b40db524",
+                  "title": "Too many posts due to bot attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "CWE-400",
+                  "mitigation": "Add check for bots. Limit the amount of resources that an unauthorized user can cause to be expended.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 0,
+                "informationDisclosure": 3,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
             },
@@ -859,7 +911,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "No check for who the code belongs to",
+                  "description": "No check for who the code belongs to, CWE-862, CWE-639, CWE-566, CWE-285, CWE-284",
                   "mitigation": "Implement Access Control",
                   "modelType": "STRIDE",
                   "new": false,
@@ -882,7 +934,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 2,
                 "denialOfService": 0,
@@ -1019,6 +1071,19 @@
                   "new": false,
                   "number": 4,
                   "score": ""
+                },
+                {
+                  "id": "bf37ba72-6569-4e0d-aa98-6382d12ed0ff",
+                  "title": "Infinite code loop",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "CWE-400, CWE-835, CWE-674",
+                  "mitigation": "Limit system resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1026,7 +1091,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 2
               }
             }
@@ -2114,8 +2179,8 @@
           },
           {
             "position": {
-              "x": 990.25,
-              "y": 250
+              "x": 969,
+              "y": 220
             },
             "size": {
               "width": 70,
@@ -2724,6 +2789,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 11
   }
 }
