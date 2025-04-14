@@ -19,6 +19,48 @@
         "cells": [
           {
             "position": {
+              "x": -358.0000000000025,
+              "y": 104.9999999999983
+            },
+            "size": {
+              "width": 1300,
+              "height": 330
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "13b65158-5a32-4b90-a883-24334b9f2364",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 830,
+              "y": 95
+            },
+            "size": {
+              "width": 230,
+              "height": 280
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "8057d62a-eaa3-497b-b1f7-928b8b5b977c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 468.75,
               "y": 10
             },
@@ -136,7 +178,7 @@
           {
             "position": {
               "x": 670,
-              "y": 200
+              "y": 175
             },
             "size": {
               "width": 110,
@@ -611,8 +653,8 @@
           },
           {
             "position": {
-              "x": -380,
-              "y": 349.0000000000002
+              "x": -310,
+              "y": 325
             },
             "size": {
               "width": 80,
@@ -730,8 +772,8 @@
           },
           {
             "position": {
-              "x": -80,
-              "y": 330
+              "x": -20,
+              "y": 325
             },
             "size": {
               "width": 70,
@@ -850,7 +892,7 @@
           {
             "position": {
               "x": 855,
-              "y": 150
+              "y": 185
             },
             "size": {
               "width": 70,
@@ -2291,7 +2333,7 @@
           },
           {
             "position": {
-              "x": -240,
+              "x": -190,
               "y": 560
             },
             "size": {
