@@ -36,6 +36,13 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -769,12 +776,38 @@
                   "new": false,
                   "number": 14,
                   "score": ""
+                },
+                {
+                  "id": "64381545-8664-4e4f-b2ea-138bc00886e6",
+                  "title": "Lying user",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "User said they didn't publish a post when they actually did, CWE-778",
+                  "mitigation": "Use a centralized logging mechanism that supports multiple levels of detail.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "8a09bbd0-32cc-4724-8f6f-7dfab3476e0e",
+                  "title": "Publish post as someone else",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "CWE-290, CWE-287, CWE-639",
+                  "mitigation": "Check that the authenticated user owns the account they are posting as",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "tampering": 3,
-                "repudiation": 0,
+                "tampering": 4,
+                "repudiation": 1,
                 "informationDisclosure": 3,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
@@ -1129,8 +1162,8 @@
                 "text": "Edit user \nreputation"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1226,12 +1259,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "813f5d65-61c6-45c1-bcef-80896deacef9",
+                  "title": "Lying user",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "User says they didn't edit reputation, when they did, CWE-778",
+                  "mitigation": "Use a centralized logging mechanism that supports multiple levels of detail.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2210,8 +2265,8 @@
                 "text": "Delete \npost"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2307,12 +2362,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b160e99f-f69d-40f9-b4e0-63a16b12dfcf",
+                  "title": "Lying moderator",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Moderator said they deleted / didn't delete a post (they were lying), CWE-778",
+                  "mitigation": "Use a centralized logging mechanism that supports multiple levels of detail.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2329,8 +2406,8 @@
                 "text": "Generate \ncode link"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2426,12 +2503,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4e83253c-80c3-4049-832d-aa0b776d5239",
+                  "title": "Malicious links",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Make malicious link instead - MiTM, CWE-300",
+                  "mitigation": "Always fully authenticate both ends of any communications channel.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2808,6 +2907,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 20
   }
 }
