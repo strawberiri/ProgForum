@@ -646,16 +646,36 @@
                   "new": false,
                   "number": 25,
                   "score": ""
+                },
+                {
+                  "id": "d36dd49a-5eb8-4b53-9728-1bc54053b6ff",
+                  "title": "View code of other users",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-200, CWE-639, ",
+                  "mitigation": "Trust boundaries, for each and every data access, ensure that the user has sufficient privilege to access the record that is being requested",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -852,12 +872,25 @@
                   "new": false,
                   "number": 20,
                   "score": ""
+                },
+                {
+                  "id": "7b60892b-a197-4d29-a252-1e454b0a8869",
+                  "title": "Someone published malicious post then deleted it",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "CWE-778",
+                  "mitigation": "Use a centralized logging mechanism that supports multiple levels of detail.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 4,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 3,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
@@ -1340,11 +1373,24 @@
                   "new": false,
                   "number": 17,
                   "score": ""
+                },
+                {
+                  "id": "841cc83e-04c4-4848-a6cf-516eb4d35090",
+                  "title": "Edit own reputation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "CWE-862, CWE-639, CWE-915",
+                  "mitigation": "Validate user roles/permissions before allowing reputation changes, reputation should be system-managed (e.g., based on votes, activity) rather than user-editable.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -2970,6 +3016,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 25
+    "threatTop": 31
   }
 }
