@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": -358.0000000000025,
-              "y": 104.9999999999983
+              "x": -358.00000000000284,
+              "y": 104.99999999999989
             },
             "size": {
               "width": 1300,
-              "height": 330
+              "height": 400
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -41,11 +41,11 @@
           {
             "position": {
               "x": 830,
-              "y": 95
+              "y": 105
             },
             "size": {
               "width": 230,
-              "height": 280
+              "height": 270
             },
             "visible": true,
             "shape": "trust-boundary-box",
