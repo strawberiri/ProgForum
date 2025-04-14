@@ -603,8 +603,8 @@
           },
           {
             "position": {
-              "x": 265,
-              "y": 200
+              "x": 260,
+              "y": 194.99999999999997
             },
             "size": {
               "width": 80,
@@ -737,24 +737,11 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "CWE-79, CWE-87",
+                  "description": "CWE-79, CWE-80, CWE-116, CWE-159",
                   "mitigation": "Validate all Input & Handle Exceptions",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
-                  "score": ""
-                },
-                {
-                  "id": "1c3331d1-8531-4601-ae49-82f9279f2554",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 9,
                   "score": ""
                 },
                 {
@@ -769,23 +756,29 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "a33b0fd6-bb83-4a3b-b9e6-02ee3c916c0e",
+                  "title": "CSRF",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-352",
+                  "mitigation": "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 1,
+                "spoofing": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 3,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -930,10 +923,36 @@
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "4a651e6d-83a9-4097-9cd9-4e2f6f3dfbd1",
+                  "title": "XSS injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-79, CWE-80, CWE-116, CWE-159",
+                  "mitigation": "Validate all Input & Handle Exceptions",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "07d88eee-f07b-4e1d-8f16-27631139417f",
+                  "title": "CSRF",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "CWE-352",
+                  "mitigation": "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 3,
                 "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 2,
@@ -2789,6 +2808,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 14
   }
 }
